@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="Portfolio icon" type="x=icon" href="images/bg2.jpg">
+<title>Coloniae</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+</head>
+<body onload="myFunction()">	
+<div id="video-bg">
+		<video autoplay muted loop>
+			<source src="images/bg1.mp4" type="video/mp4">
+		</video>
+	</div>
+	<div class="content">
+		<label id="lblGreetings"></label>
+		<h2>The inspired scent of life</h2>
+        <h1>COLONIAE</h1>
+		<div class="text-1">Scent is the <span class="typing"></span></div>
+		
+	</div>
+	<div id="picture"></div>
+<nav class="navbar">
+<div class="max-width">
+<div class="logo"><a href="index.html" alt="Pabango" title="PRIYA JEANELLE RABINA ESPEDIDO">Colo<span>niae.</span></a></div>
+ <ul class="menu">
+	
+<li><a href="homepage.html" class="menu-btn">Home</a></li>
+<li><a href="about.html" class="menu-btn">About</a></li>
+<li><a href="products.html" class="menu-btn">Products</a></li>
+<li><a href="reviews.html" class="menu-btn">Reviews</a></li>
+<li><a href="contact.html" class="menu-btn">Contact</a></li>
+</ul>
+</div>
+
+<audio controls autoplay loop src="images/music.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+	function myFunction() {
+	  alert("Hi Welcome to COLONIAE. By the way let me remind you that there are 7 days in a week!");
+	}
+	var myDate = new Date();
+    var hrs = myDate.getHours();
+
+    var greet;
+
+    if (hrs < 12)
+        greet = 'Good Morning';
+    else if (hrs >= 12 && hrs <= 17)
+        greet = 'Good Afternoon';
+    else if (hrs >= 17 && hrs <= 24)
+        greet = 'Good Evening';
+
+    document.getElementById('lblGreetings').innerHTML =
+        '<b>' + greet + '</b> and welcome to: ';
+	</script>
+	
+
+</nav>
+<script src="script.js"></script>
+
+</body>
+<style>
+		
